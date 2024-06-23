@@ -7,8 +7,8 @@
 
 /* classes: pais */
 .clsPrincipal{
-    max-width: 100vw;
-    width: 50%;
+    max-width: 1024px;
+    width: 100%;
     /* p/ centralizar */
     margin: 0 auto;
 }
@@ -26,6 +26,10 @@
 }
 
 /* classes elementos: pais */
+.clsProdutos li:hover{
+    background-color: #e8dfdf;
+}
+
 .clsSobre p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
@@ -83,7 +87,7 @@ p{
 /* elementos: nivel 1 */
 section h2{
     font-family: 'Roboto', 'sans-serif';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     font-style: italic;
     /* cores */
@@ -109,8 +113,8 @@ li img
 }
 
 li img{
-    width: 180px;
-    height: 180px;
+    width: 248px;
+    height: 248px;
 }
 
 li button{
@@ -158,6 +162,60 @@ header .clsPrincipal{
 
 /* IDs: pais */
 #idImgSobreLoja{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
 }
+
+/* == responsividades
+    tablet */
+@media screen and (max-width: 1023px) and (min-width: 641px){
+    /* classes: pais */
+    .clsPrincipal{
+        width: 80%;
+    }
+
+    .clsSobre{
+        display: block;
+    }
+
+    /* classes elementos: pais */
+    li img{
+        width: 318px;
+        height: 318px;
+    }
+
+    .clsProdutos{
+        grid-template-columns: repeat(2, 49.5%);
+        /* cria espacamentos entre as colunas + linhas */
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    /* elementos: pais */
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* elementos: nivel 1 */
+    .clsSobre p{
+        font-size: 18px;
+    }
+
+    section div{
+        margin-left: 0;
+    }
+
+    section h2{
+        font-size: 24px;
+        /* espacamento */
+        padding-top: 16px;
+        margin-top: 32px;
+    }
+
+    /* IDs: pais */
+    #idImgSobreLoja{
+        width: 650px;
+        height: 650px;
+    }
+}   
