@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Shoes</title>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <!-- estilos -->
-    <link rel="stylesheet" href="./estilos/index.css">
+    <link rel="stylesheet" href="./estilos_css/index.css">
 </head>
 <body>
     <!-- cabecalho -->
-     <header>
+    <header>
         <div class="clsPrincipal">
             <h1>EBAC Shoes</h1>
             <!-- lista NO: sobre a loja, produtos -->
@@ -31,31 +36,35 @@
             <!-- imagem da loja -->
             <picture>
                 <!-- imagem principal -->
-                <img src="https://via.placeholder.com/300x300" alt="Imagem vazia">
+                <img src="./imagens/sobre_a_loja.png" alt="Imagem do interior da loja" id="idImgSobreLoja">
             </picture>
-            <h2>Sobre a loja</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus quibusdam soluta recusandae ipsam temporibus, dignissimos facilis ratione tenetur commodi quisquam iusto, vitae natus esse atque consequatur sequi. Architecto, optio.
-            </p>
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus quibusdam soluta recusandae ipsam temporibus, dignissimos facilis ratione tenetur commodi quisquam iusto, vitae natus esse atque consequatur sequi. Architecto, optio.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, minus rerum neque vel repellat consequatur quis illo accusamus ratione officiis totam! Iusto, ipsa esse voluptates perferendis amet magni modi ea?
+                </p>
+            </div>
         </section>
         <!-- produtos -->
          <section>
             <h2>Produtos</h2>
             <!-- lista de produtos -->
-            <ul>
+            <ul class="clsProdutos">
                 <!-- 1 -->
                 <li>
                     <!-- imagem -->
                     <picture>
-                        <img src="https://via.placeholder.com/100x100" alt="Imagem vazia">
+                        <img src="./imagens/produto.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi iure placeat recusandae reprehenderit non? Quos beatae quisquam vel asperiores nisi esse enim, fugiat ea provident quidem velit aperiam facilis alias.
-                    </h3>
+                    <Strong>
+                        Tênis Nike Modelo <br>
+                        XPTO
+                    </Strong>
                     <!-- informacao -->
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe esse modi natus minima placeat autem nobis voluptatum dolorum amet, harum alias asperiores deleniti molestiae adipisci. Recusandae libero culpa similique!
+                        Tênis Nike preto, disponível nos tamanhos: 37, 38, 39, 40 e 42
                     </p>
                     <!-- botao -->
                     <button type="button">Adicionar ao carrinho</button>
@@ -64,15 +73,15 @@
                 <li>
                     <!-- imagem -->
                     <picture>
-                        <img src="https://via.placeholder.com/100x100" alt="Imagem vazia">
+                        <img src="./imagens/produto2.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi iure placeat recusandae reprehenderit non? Quos beatae quisquam vel asperiores nisi esse enim, fugiat ea provident quidem velit aperiam facilis alias.
-                    </h3>
+                    <Strong>
+                        Tênis Adidas Modelo XPTO
+                    </Strong>
                     <!-- informacao -->
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe esse modi natus minima placeat autem nobis voluptatum dolorum amet, harum alias asperiores deleniti molestiae adipisci. Recusandae libero culpa similique!
+                        Tênis Adidas preto, disponível nos tamanhos: 37, 38, 39, 40 e 42
                     </p>
                     <!-- botao -->
                     <button type="button">Adicionar ao carrinho</button>
@@ -81,15 +90,16 @@
                 <li>
                     <!-- imagem -->
                     <picture>
-                        <img src="https://via.placeholder.com/100x100" alt="Imagem vazia">
+                        <img src="./imagens/produto2.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi iure placeat recusandae reprehenderit non? Quos beatae quisquam vel asperiores nisi esse enim, fugiat ea provident quidem velit aperiam facilis alias.
-                    </h3>
+                    <Strong>
+                        Tênis Vans Modelo <br>
+                        XPTO
+                    </Strong>
                     <!-- informacao -->
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe esse modi natus minima placeat autem nobis voluptatum dolorum amet, harum alias asperiores deleniti molestiae adipisci. Recusandae libero culpa similique!
+                        Tênis Vans preto, disponível nos tamanhos: 37, 38, 39, 40 e 42
                     </p>
                     <!-- botao -->
                     <button type="button">Adicionar ao carrinho</button>
@@ -98,15 +108,15 @@
                 <li>
                     <!-- imagem -->
                     <picture>
-                        <img src="https://via.placeholder.com/100x100" alt="Imagem vazia">
+                        <img src="./imagens/produto.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi iure placeat recusandae reprehenderit non? Quos beatae quisquam vel asperiores nisi esse enim, fugiat ea provident quidem velit aperiam facilis alias.
-                    </h3>
+                    <Strong>
+                        Tênis Van Infantil Modelo XPTO
+                    </Strong>
                     <!-- informacao -->
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe esse modi natus minima placeat autem nobis voluptatum dolorum amet, harum alias asperiores deleniti molestiae adipisci. Recusandae libero culpa similique!
+                        Tênis Van Infantil preto, disponível nos tamanhos: 27, 28, 29 e 30
                     </p>
                     <!-- botao -->
                     <button type="button">Adicionar ao carrinho</button>
