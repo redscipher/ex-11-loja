@@ -18,11 +18,11 @@
         <div class="clsPrincipal">
             <h1>EBAC Shoes</h1>
             <!-- lista NO: sobre a loja, produtos -->
-            <ul>
-                <li>
+            <ul id="idLstCab">
+                <li id="idLstItemSobreLoja">
                     <h3>Sobre a loja</h2>
                 </li>
-                <li>
+                <li id="idLstItemProdutos">
                     <h3>Produtos</h2>
                 </li>
             </ul>
@@ -32,7 +32,7 @@
      <main class="clsPrincipal">
         <!-- secoes: sobre, produtos
            sobre -->
-        <section class="clsSobre">
+        <section class="clsSobre" id="idScSobreLoja">
             <!-- imagem da loja -->
             <picture>
                 <!-- imagem principal -->
@@ -47,7 +47,7 @@
             </div>
         </section>
         <!-- produtos -->
-         <section>
+         <section id="idScProdutos">
             <h2>Produtos</h2>
             <!-- lista de produtos -->
             <ul class="clsProdutos">
@@ -58,10 +58,10 @@
                         <img src="./imagens/produto.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <Strong>
-                        Tênis Nike Modelo <br>
-                        XPTO
-                    </Strong>
+                    <div class="clsDescricao">
+                        <Strong>Tênis Nike Modelo</Strong>
+                        <strong>XPTO</strong>
+                    </div>
                     <!-- informacao -->
                     <p>
                         Tênis Nike preto, disponível nos tamanhos: 37, 38, 39, 40 e 42
@@ -76,10 +76,10 @@
                         <img src="./imagens/produto2.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <Strong>
-                        Tênis Adidas Modelo <br>
-                        XPTO
-                    </Strong>
+                    <div class="clsDescricao">
+                        <Strong>Tênis Adidas Modelo</Strong>
+                        <strong>XPTO</strong>
+                    </div>
                     <!-- informacao -->
                     <p>
                         Tênis Adidas preto, disponível nos tamanhos: 37, 38, 39, 40 e 42
@@ -94,10 +94,10 @@
                         <img src="./imagens/produto2.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <Strong>
-                        Tênis Vans Modelo <br>
-                        XPTO
-                    </Strong>
+                    <div class="clsDescricao">
+                        <Strong>Tênis Vans Modelo</Strong>
+                        <strong>XPTO</strong>
+                    </div>
                     <!-- informacao -->
                     <p>
                         Tênis Vans preto, disponível nos tamanhos: 37, 38, 39, 40 e 42
@@ -112,10 +112,10 @@
                         <img src="./imagens/produto.png" alt="Imagem de um tenis de marca">
                     </picture>
                     <!-- subtitulo -->
-                    <Strong>
-                        Tênis Van Infantil <br>
-                        Modelo XPTO
-                    </Strong>
+                    <div class="clsDescricao">
+                        <Strong>Tênis Van Infantil</Strong>
+                        <strong>Modelo XPTO</strong>
+                    </div>
                     <!-- informacao -->
                     <p>
                         Tênis Van Infantil preto, disponível nos tamanhos: 27, 28, 29 e 30
@@ -126,5 +126,10 @@
             </ul>
          </section>
      </main>
+     <!-- jquery -->
+     <script type="text/javascript" src="./bibliotecas/jquery-3.7.1.js"></script>
+     <script type="text/javascript" src="./bibliotecas/jquery-migrate-3.4.0.js"></script>
+     <!-- scripts -->
+     <script type="text/javascript" src="./fontes/index.js"></script>
 </body>
 </html>

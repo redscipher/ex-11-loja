@@ -25,6 +25,14 @@
     row-gap: 5%;
 }
 
+.clsDescricao{
+    display: flex;
+    flex-direction: column;
+    /* remove margens */
+    margin-left: 0;
+    padding-left: 0;
+}
+
 /* classes elementos: pais */
 .clsProdutos li:hover{
     background-color: #e8dfdf;
@@ -79,7 +87,7 @@ strong{
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     /* margens */
     margin-top: 12px;
 }
@@ -103,10 +111,6 @@ section div{
     margin-left: 32px;
 }
 
-li button{
-    width: 100%;
-}
-
 li img
 ,li h3{
     margin-bottom: 16px;
@@ -118,6 +122,8 @@ li img{
 }
 
 li button{
+    width: 100%;
+    /* cores */
     background-color: #3868D6;
     color: #EBF1F4;
     /* tamanho */
@@ -128,6 +134,11 @@ li button{
     border-radius: 5px;
     /* cursor */
     cursor: pointer;
+}
+
+/* estados */
+li button:hover{
+    background-color: #3867d6c7;
 }
 
 /* elementos: nivel 2 */
@@ -168,7 +179,7 @@ header .clsPrincipal{
 
 /* == responsividades
     tablet */
-@media screen and (max-width: 1023px) and (min-width: 641px){
+@media screen and (min-width: 641px) and (max-width: 1023px){
     /* classes: pais */
     .clsPrincipal{
         width: 80%;
@@ -178,23 +189,25 @@ header .clsPrincipal{
         display: block;
     }
 
-    /* classes elementos: pais */
+    .clsDescricao{
+        flex-direction: row;
+    }
+
+    /* classes elementos: nivel 1 */
     li img{
-        width: 318px;
-        height: 318px;
+        width: 39vw;
     }
 
     .clsProdutos{
-        grid-template-columns: repeat(2, 49.5%);
+        grid-template-columns: repeat(2, 49%);
         /* cria espacamentos entre as colunas + linhas */
-        column-gap: 1%;
+        column-gap: 2%;
         row-gap: 5%;
     }
 
     /* elementos: pais */
     section{
-        width: 100%;
-        height: 100vh;
+        width: 80vw;
     }
 
     /* elementos: nivel 1 */
@@ -215,7 +228,80 @@ header .clsPrincipal{
 
     /* IDs: pais */
     #idImgSobreLoja{
-        width: 650px;
-        height: 650px;
+        width: 80vw;
     }
-}   
+} 
+
+/* smartphones */
+@media screen and (max-width: 640px){
+    /* IDs: pais */
+    #idImgSobreLoja{
+        width: 329px;
+        height: 329px;
+    }
+
+    #idImgSobreLoja{
+        width: 80vw;
+    }
+
+    .clsDescricao{
+        flex-direction: row;
+        /* margem */
+        margin-bottom: 16px;
+    }
+
+    /* classes: pais */
+    .clsPrincipal{
+        max-width: 600px;
+        width: 80%;
+        /* p/ centralizar */
+        margin: 0 40px;
+    }
+
+    .clsSobre{
+        display: block;
+    }
+
+    .clsProdutos{
+        display: block;
+    }
+
+    /* elementos */
+    section{
+        align-items: center;
+        width: 100%;
+    }
+
+    ul{
+        display: block;
+        margin-top: 8px;
+        padding-top: 8px;
+    }
+
+    button{
+        margin-bottom: 32px;
+    }
+
+    /* elementos: nivel 1*/
+    section div{
+        margin-left: 0;
+    }
+
+    section h2{
+        font-size: 24px;
+        /* espacamento */
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+
+    /* classes elementos: nivel 1 */
+    li img{
+        width: 80vw;
+    }
+
+    /* elementos: nivel 2 */
+    header ul li{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
