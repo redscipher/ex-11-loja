@@ -4,19 +4,20 @@ $(document).ready(()=>{
     console.log($(document));
 
     // funcoes jquery
-    let executaCliqueAnimacao = function(){
+    let executaCliqueAnimacao = function(e){
         try {
             //exibe mensagem sucesso
+            e.preventDefault();
             console.log('voce clicou');
             //variaveis
             let itemClicado, destino
             // busca o h3 mais proximo do item clicado
-            itemClicado = $(this).closest('li h3').text();
+            itemClicado = $(this).closest('li a').text();
             //verifica item clicado + define destino
             if (itemClicado == 'Sobre a loja'){
-                destino = $('#idLstItemSobreLoja');
+                destino = $('#idScSobreLoja');
             }else{
-                destino = $('#idLstItemProdutos');
+                destino = $('#idScProdutos');
             }
             // exibe destino
             console.log(destino);
@@ -31,7 +32,7 @@ $(document).ready(()=>{
     }
 
     // eventos
-    $('#idLstCab').on('click', 'li h3', executaCliqueAnimacao);
+    $('#idLstCab').on('click', 'li a', executaCliqueAnimacao);
     // adicao ao carrinho
     $('button').on('click', function(e){alert('Produto adicionado ao carrinho');});
 });

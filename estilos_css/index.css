@@ -52,6 +52,9 @@ header{
     /* cores */
     background-color: #3868D6;
     color: #DEF7FD;
+    /* margens */
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 main{
@@ -111,8 +114,14 @@ section div{
     margin-left: 32px;
 }
 
-li img
-,li h3{
+ul li{
+    /* centralizacao */
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+li img{
     margin-bottom: 16px;
 }
 
@@ -148,14 +157,20 @@ header ul li{
 
 /* mistos: elementos nivel 1 + 3 */
 strong
-,header ul li h3{
+,header ul li a{
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 16px;
+    /* cores */
+    color: #ccc;
+    text-decoration: none;
+    /* margens */
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 /* estados */
-header ul li h3:hover{
+header ul li a:hover{
     cursor: pointer;
     text-decoration: underline;
     color: #def7fdbd;
