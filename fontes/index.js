@@ -34,5 +34,5 @@ $(document).ready(()=>{
     // eventos
     $('#idLstCab').on('click', 'li a', executaCliqueAnimacao);
     // adicao ao carrinho
-    $('button').on('click', function(e){alert('Produto adicionado ao carrinho');});
+    $('button').on('click', (e)=>{alert('Produto adicionado ao carrinho')});
 });
